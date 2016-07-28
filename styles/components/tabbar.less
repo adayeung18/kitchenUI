@@ -1,0 +1,48 @@
+.tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 2.5rem;
+    padding: 0 10%;
+    background: @brand-primary;
+    font-size: @font-size-middle;
+    color: #fff;
+
+    & , a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+
+        justify-content: space-between;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    & a {
+        color: #fff;
+    }
+
+    &-item {
+        & .icon {
+            display: inline-block;
+            width: 1rem;
+            height: 1.5rem;
+            margin-right: .3rem;
+            background-position: center;
+
+            &-components {
+                .img-retina('../../images/tabbar_icon1.png'; 1rem; .625rem);
+            }
+            &-official {
+                .img-retina('../../images/tabbar_icon2.png'; .905rem; .755rem);
+            }
+        }
+
+    }
+}

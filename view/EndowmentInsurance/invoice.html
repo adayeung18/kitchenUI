@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发票</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta content="width=device-width,minimum-scale=1.00001,maximum-scale=1.00001,user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="format-detection" content="email=no" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="white-bg">
+    <div class="page-container">
+        <div class="view-container">
+            <header class="brand-title">
+                发票
+                <div class="brand-title-back" onclick="window.history.go(-1)">返回</div>
+            </header>
+            <section class="process">
+                <p>在线支付成功后在5个工作日内配送，请注意留存，后续如发生退保需退还原件。</p>
+                <div class="process-form">
+                    <ul>
+                        <li>
+                            <div class="input-tit">发票抬头</div>
+                            <input type="text" id="name" class="input-style" value="李四" maxlength="20">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <p class="tips-gray">按照保监会要求，发票抬头必须是投保人姓名</p>
+                        <li>
+                            <div class="input-tit">收件人</div>
+                            <input type="text" id="name" class="input-style" value="李四" maxlength="20">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <li>
+                            <div class="input-tit">手机号</div>
+                            <input type="text" id="name" class="input-style" value="18322244444" maxlength="20">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <li>
+                            <span class="remind-icon remind-icon-arrow"></span>
+                            <select name="select" id="idType" class="select-style">
+                                <option value="">省、市、区/县</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="remind-icon remind-icon-clear"></span>
+                            <input type="text" id="name" class="input-style input-style" placeholder="街道地址" maxlength="18">
+                            <div class="remind-text">您输入的街道地址错误<span></span></div>
+                        </li>
+                        <li>
+                            <span class="remind-icon remind-icon-clear"></span>
+                            <input type="text" id="name" class="input-style" placeholder="邮政编码" maxlength="11">
+                            <div class="remind-text">您输入的邮政编码错误<span></span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-horizontally">
+                    <div class="btn-sub">保存信息</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

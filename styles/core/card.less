@@ -1,0 +1,119 @@
+.card {
+    position: relative;
+    margin-top: 12px;
+    padding: 24px 30px 0;
+    font-size: @font-size-middle;
+    color: @gray-dark;
+    line-height: 22px;
+
+    &::before {
+        .top-line;
+    }
+
+    &::after {
+        .bottom-line;
+        bottom: -1px;
+    }
+
+    & h2 {
+        font-size: @font-size-bigger;
+        color: @gray-base;
+        line-height: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &-base-title {
+        width: 100%;
+        height: 24px;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        &-h2 {
+            flex: 1;
+        }
+
+        &-img {
+            width: 24px;
+            margin-right: 12px;
+        }
+    }
+
+    &-base-con {
+        margin-top: 12px;
+        padding-bottom: 24px;
+
+    }
+
+    &-linked {
+        position: relative;
+        padding: 15px 0;
+        font-size: @font-size-middle;
+        color: @gray-base;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+
+        justify-content: space-between;
+
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        &::before {
+            .top-line;
+        }
+
+        & .arrow-right {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            margin-right: -3px;
+            background-position: center;
+        }
+    }
+
+    & dl {
+        padding-bottom: 24px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+
+        justify-content: space-between;
+
+        //-webkit-box-align: center;
+        //-ms-flex-align: center;
+        //align-items: center;
+
+        & dt {
+            width: 26%;
+            margin-right: 12px;
+        }
+
+        & dd {
+            width: 70%;
+            flex: 1;
+
+            & p {
+                max-height: 65px;
+                overflow: hidden;
+                margin-top: 5px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+
+
+}

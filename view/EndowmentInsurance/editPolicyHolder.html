@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>编辑投保人</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta content="width=device-width,minimum-scale=1.00001,maximum-scale=1.00001,user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="format-detection" content="email=no" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="white-bg">
+    <div class="page-container">
+        <div class="view-container">
+            <header class="brand-title">
+                编辑投保人
+                <div class="brand-title-back" onclick="window.history.go(-1)">返回</div>
+            </header>
+            <section class="process">
+                <p>投保人是指与保险公司签订合同、有支付保险费义务的人。在填写时，请确保填写必要的真实信息。</p>
+                <div class="process-form">
+                    <ul>
+                        <li>
+                            <div class="input-tit">姓名</div>
+                            <div class="remind-text">您输入姓名有误<span></span></div>
+                            <input type="text" id="name" class="input-style" value="王晓晓">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <li>
+                            <div class="input-tit">证件类型</div>
+                            <input type="text" id="name" class="input-style" value="身份证">
+                            <span class="remind-icon remind-icon-arrow"></span>
+                        </li>
+                        <li>
+                            <div class="input-tit">证件号码</div>
+                            <div class="remind-text">您输入证件号码错误<span></span></div>
+                            <input type="text" id="name" class="input-style" value="430602198906091024" maxlength="18">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <!-- 如为军官证类型便增加身份证及出生日期 -->
+                        <div class="" id="addGender">
+                            <li>
+                                <div class="input-tit">性别</div>
+                                <input type="text" id="name" class="input-style" value="男">
+                                <span class="remind-icon remind-icon-arrow"></span>
+                            </li>
+                            <li>
+                                <div class="input-tit">出生日期</div>
+                                <input type="text" id="name" class="input-style" value="1989-09-09">
+                                <span class="remind-icon remind-icon-arrow"></span>
+                            </li>
+                        </div>
+                        <!-- ********* -->
+                        <li>
+                            <div class="input-tit">手机号</div>
+                            <div class="remind-text">您输入手机号码错误<span></span></div>
+                            <input type="text" id="name" class="input-style" value="18999998888" maxlength="11">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <li>
+                            <div class="remind-text">您输邮箱错误<span></span></div>
+                            <input type="text" id="name" class="input-style input-style"placeholder="电子邮箱(非必填)" maxlength="50">
+                            <span class="remind-icon remind-icon-clear"></span>
+                            <p class="tips-gray">用于接收电子保单</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-horizontally">
+                    <div class="btn-sub"><a href="fillInformation.html">保存信息</a></div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

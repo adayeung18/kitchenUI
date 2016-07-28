@@ -1,0 +1,112 @@
+//** Block button
+.btn {
+  // display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+//** 常规按钮-块状按钮
+// --------------------------------------
+.btn-default-block {
+  .btn;
+  .button-width( 75%, 48px, @font-size-bigger, 48px, 100px);
+  .button-variant( @btn-default-text, @btn-default-bg, @btn-default-bg);
+}
+
+.btn-small-block {
+  .btn;
+  .button-width( 44%, 42px, @font-size-bigger, 42px, 100px);
+  .button-variant( @btn-default-text, @btn-default-bg, @btn-default-bg);
+}
+
+.btn-smaller-block {
+  .btn;
+  .button-size( 0, 15px, @font-size-bigger, 30px, 100px);
+  .button-variant( @btn-default-text, @btn-default-bg, @btn-default-bg);
+  display: inline-block;
+}
+
+.btn-block-active {
+  .button-variant( @btn-default-text, @btn-default-active, @btn-default-active);
+}
+
+.btn-block-disable {
+  .button-variant( @btn-default-disable-text, @btn-default-disable, @btn-default-disable);
+}
+
+//** 常规按钮-线框按钮
+// --------------------------------------
+.btn-default-linear {
+  .button-variant( @btn-default-bg, transparent, @btn-default-bg);
+}
+
+.btn-linear-active {
+  .button-variant( @btn-default-bg, @btn-linear-active, @btn-default-bg);
+}
+
+.btn-linear-disable {
+  .button-variant( @btn-linear-disable, transparent, @btn-linear-disable);
+}
+
+.btn-warning {
+  .button-variant( @btn-warning, transparent, @btn-warning);
+}
+
+//** 常规按钮-文字按钮
+// --------------------------------------
+.btn-text {
+  .button-variant( #666, transparent, transparent);
+}
+
+//
+// --------------------------------------
+.btn-add-icon {
+  .btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  .button-width(58px, 22px, @font-size-smaller, 22px,30px);
+  .button-variant(@brand-primary,@content-block,@brand-primary);
+  .add-icon-imgs {
+    .square(8px);
+    .img-retina('../../images/add-icon.jpg'; 8px; 8px);
+  }
+}
+
+.row-box-list-title{
+  .disable-icon{
+    .add-icon-imgs{
+      .img-retina('../../images/disable-add.jpg'; 8px; 8px);
+    }
+  }
+}
+
+
+.btn-hollow {
+  .button-variant(@btn-default-bg, transparent, @btn-default-bg);
+}
+
+.btn-disable {
+  .button-variant(@gray-obvious, transparent, @gray-obvious);
+}
+
+.w-50 { width: 50%; }
+
+

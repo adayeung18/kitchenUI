@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>添加被保险人</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta content="width=device-width,minimum-scale=1.00001,maximum-scale=1.00001,user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <!-- UC默认竖屏 ，UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <!-- QQ强制竖屏 QQ强制全屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <meta name="format-detection" content="email=no" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="white-bg">
+    <div class="page-container">
+        <div class="view-container">
+            <header class="brand-title">
+                添加被保险人
+                <div class="brand-title-back" onclick="window.history.go(-1)">返回</div>
+            </header>
+            <section class="process">
+                <p>被保险人，就是保险的对象，也可说是指保险事故发生时遭受损害的人。</p>
+                <div class="process-form">
+                    <ul>
+                        <li>
+                            <div class="remind-text">您输入姓名有误<span></span></div>
+                            <input type="text" id="name" class="input-style" placeholder="姓名" maxlength="20">
+                            <span class="remind-icon remind-icon-clear"></span>
+                        </li>
+                        <li>
+                            <!-- <input type="text" id="name" class="input-style" placeholder="证件类型"> -->
+                            <span class="remind-icon remind-icon-arrow"></span>
+                            <select name="select" id="idType" class="select-style">
+                                <option value="证件类型" selected>证件类型</option>
+                                <option value="身份证">身份证</option>
+                                <option value="身份证">军人证</option>
+                                <option value="护照">护照</option>
+                                <option value="港澳台证件">港澳台证件</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="remind-icon remind-icon-clear"></span>
+                            <input type="text" id="name" class="input-style input-style" placeholder="证件号码" maxlength="18">
+                            <div class="remind-text">您输证件号码错误<span></span></div>
+                        </li>
+                        <li>
+                            <span class="remind-icon remind-icon-clear"></span>
+                            <input type="text" id="name" class="input-style" placeholder="手机号码" maxlength="11">
+                            <div class="remind-text">您输入手机号错误<span></span></div>
+                        </li>
+                        <li>
+                            <span class="input-tit">与投保人关系</span>
+                            <span class="remind-icon remind-icon-arrow"></span>
+                            <select name="select" id="idType" class="select-style">
+                                <option value="子女" selected>子女</option>
+                                <option value="配偶">配偶</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-horizontally">
+                    <div class="btn-sub">保存信息</div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
